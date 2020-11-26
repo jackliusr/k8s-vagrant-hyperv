@@ -1,0 +1,6 @@
+=  lab setup
+. set up switch 
++ 
+https://blog.netwatwezoeken.nl/static-ip-for-hyper-v-with-nat/
+
+. vagrant up

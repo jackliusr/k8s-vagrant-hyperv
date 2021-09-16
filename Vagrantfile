@@ -12,7 +12,7 @@ Vagrant.configure(2) do |config|
     k8smaster.vm.hostname = "k8smaster.example.com"
     k8smaster.vm.provider "hyperv" do |v|
       v.vmname = "k8smaster"
-      v.memory = 4096
+      v.memory = 2048
       v.cpus = 2
     end
 	k8smaster.vm.synced_folder ".", "/vagrant", disabled: true
@@ -34,7 +34,7 @@ Vagrant.configure(2) do |config|
       workernode.vm.hostname = "kworker#{i}.example.com"
       workernode.vm.provider "hyperv" do |v|
         v.vmname = "kworker#{i}"
-        v.memory = 2048
+        v.memory = 1024
         v.cpus = 1
       end
       workernode.vm.synced_folder ".", "/vagrant", disabled: true

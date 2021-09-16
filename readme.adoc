@@ -1,5 +1,10 @@
 =  lab setup
 
+. install vagrant plugin reload
++
+```shell
+ vagrant plugin install vagrant-reload
+```
 . set up switch 
 + 
 https://blog.netwatwezoeken.nl/static-ip-for-hyper-v-with-nat/
